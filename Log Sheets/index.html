@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <head>
-    <script>window.location = "/log.html";</script>
+	<title>Geocaching log creator</title>
+	<link rel="stylesheet" href="/indexStyle.css">
+	<link rel="icon" href="/images/favicon.png">
+	<script async src="/index.js"></script>
 </head>
 <body>
-
+	<form>
+		<div>
+			<label>Geocaching.com code:</label>
+			<input id="GC" type="text">
+		</div>
+		<div>
+			<label>OpenCache.UK code:</label>
+			<input id="OK" type="text">
+		</div>
+		<div>
+			<label>FTF Name:</label>
+			<input id="Name" type="text">
+		</div>
+		<div>
+			<label>FTF Date:</label>
+			<input id="Date" type="text">
+		</div>
+		<div>
+			<button type="button" id="submit">Submit</button>
+		</div>
+	</form>
 </body>

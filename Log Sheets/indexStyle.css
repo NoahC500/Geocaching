@@ -1,0 +1,31 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
+div {
+	display: flex;
+	justify-content: revert-layer;
+	width: 500px;
+	margin-bottom: 1em;
+}
+div:has(button) {
+	justify-content: center;
+}
+input {
+	flex-grow: 3;
+	max-width: 20em;
+	margin-left: auto;
+}
+label {
+	height: 1em;
+}
+form {
+	border: 2px solid rgb(140 140 140);
+	padding: 0.5em;
+	padding-bottom: 0;
+	padding-top: 1em;
+}
