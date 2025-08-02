@@ -1,28 +1,77 @@
 body {
 	font-family: 'Noto Sans', sans-serif;
+	min-height: 100vh;
+	min-width: 100vw;
+	margin: 0;
+}
+
+header, footer {
+	min-width: 100vw;
+	height: 5em;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	background-color: rgb(160 160 160);
+	padding: 0.5em;
+}
+
+header div {
+	display: flex;
+	align-items: center;
+}
+
+header div * {
+	text-align: right;
+	flex-grow: 3;
+	width: 50vw;
+	justify-self: right;
+}
+
+ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	min-width: calc(100vw - 0.5em);
+	justify-content: end;
+	position: absolute;
+}
+
+li {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+div.form {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	min-height: 100vh;
+	min-width: 100vw;
+	height: calc(100vh - 12em);
 }
-div {
+
+form div {
 	display: flex;
 	justify-content: revert-layer;
 	width: 500px;
 	margin-bottom: 1em;
 }
+
 div:has(button) {
 	justify-content: center;
 }
+
 input {
 	flex-grow: 3;
 	max-width: 20em;
 	margin-left: auto;
 }
+
 label {
 	height: 1em;
 }
+
 form {
 	border: 2px solid rgb(140 140 140);
 	padding: 0.5em;

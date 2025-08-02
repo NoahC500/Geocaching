@@ -6,25 +6,46 @@
 	<script async src="/index.js"></script>
 </head>
 <body>
-	<form>
+	<header>
+		<div style="font-size: 2em; font-weight: bolder;">Geocaching Log Generator</div>
+		<ul>
+			<li><a href="https://github.com/NoahC500/Geocaching">Source Code on GitHub</a></li>
+			<li>&copy; NoahC500/saoirseTheDuck</li>
+			<li>Released under GNU GPL 3.0</li>
+		</ul>
+	</header>
+	<div class="form">
+		<form>
+			<div>
+				<label>Geocaching.com code:</label>
+				<input id="GC" type="text">
+			</div>
+			<div>
+				<label>OpenCache.UK code:</label>
+				<input id="OK" type="text">
+			</div>
+			<div>
+				<label>FTF Name:</label>
+				<input id="Name" type="text">
+			</div>
+			<div>
+				<label>FTF Date:</label>
+				<input id="Date" type="text">
+			</div>
+			<div>
+				<button type="button" id="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+	<footer>
 		<div>
-			<label>Geocaching.com code:</label>
-			<input id="GC" type="text">
+			The Geocaching logo is a registered trademark of Groundspeak, Inc. DBA Geocaching. Used with permission.
 		</div>
 		<div>
-			<label>OpenCache.UK code:</label>
-			<input id="OK" type="text">
+			The Geocaching Association of Great Britain's logo is used under the licence obtainable at <a href="https://www.gagb.org.uk/gagb-logo-usage.php">gagb.org.uk/gagb-logo-usage.php</a>.
 		</div>
 		<div>
-			<label>FTF Name:</label>
-			<input id="Name" type="text">
+			The OpenCache.UK logo is used under licence, CC BY-SA 4.0 Intl., and is obtainable from <a href="https://wiki.opencache.uk/index.php/Downloads">wiki.opencache.uk/index.php/Downloads</a>.
 		</div>
-		<div>
-			<label>FTF Date:</label>
-			<input id="Date" type="text">
-		</div>
-		<div>
-			<button type="button" id="submit">Submit</button>
-		</div>
-	</form>
+	</footer>
 </body>
