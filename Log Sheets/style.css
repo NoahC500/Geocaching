@@ -1,0 +1,84 @@
+body {
+  margin: 0.85cm;
+  width: 19.3cm;
+  max-width: 19.3cm;
+}
+div.pageStart {
+  display: flex;
+  justify-content: center;
+  break-after: always;
+}
+
+div.pageStart:nth-of-type(2) {
+  padding-top: 0.85cm;
+}
+
+th.infobox {
+  text-align: center;
+}
+
+div.tableDiv {
+  padding-right: 0.25cm;
+}
+
+div.tableDiv:last-of-type {
+  padding-right: 0 !important;
+}
+
+th.code {
+  text-align: left;
+  padding: 0.5em;
+  font-size: 1;
+  background-color: white;
+}
+
+th.ftf {
+  background-color: white;
+  color: rgb(160 160 160);
+  text-align: left;
+  padding: 0.5em;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: 'Noto Sans', 'sans-serif';
+  font-size: 0.6rem;
+  letter-spacing: 1px;
+  width: 4.8cm;
+  max-height: 28cm;
+  height: 28cm;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody > tr:nth-of-type(odd) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+th[scope="row"] {
+  height: 1em;
+}
